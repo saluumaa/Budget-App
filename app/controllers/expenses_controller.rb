@@ -1,6 +1,6 @@
 class ExpensesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_group
+  before_action :set_expense
 
   def index
     @user = current_user
@@ -46,7 +46,7 @@ class ExpensesController < ApplicationController
 
   private
 
-  def set_group
+  def set_expense
     @category = Category.find(params[:category_id])
   end
 
