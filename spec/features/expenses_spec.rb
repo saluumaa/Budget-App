@@ -12,7 +12,7 @@ RSpec.feature "Expenses", type: :feature do
 
     scenario 'User navigates to the expenses index page' do
      
-
+        visit category_expenses_path
         expect(page).to have_content('Transactions')
         expect(page).to have_link('Add a New Expense')
     end
