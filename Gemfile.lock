@@ -276,7 +276,7 @@ GEM
     zeitwerk (2.6.11)
 
 PLATFORMS
-  x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
