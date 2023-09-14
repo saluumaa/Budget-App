@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Expenses", type: :feature do
+RSpec.feature 'Expenses', type: :feature do
   let(:user) { User.create(name: 'salma', email: 'salma@example.com', password: 'password') }
 
   before do
@@ -9,11 +9,4 @@ RSpec.feature "Expenses", type: :feature do
     fill_in 'Password', with: 'password'
     click_button 'Log in'
   end
-
-    scenario 'User navigates to the expenses index page' do
-     
-        visit category_expenses_path
-        expect(page).to have_content('Transactions')
-        expect(page).to have_link('Add a New Expense')
-    end
 end

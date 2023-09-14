@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Categories", type: :feature do
+RSpec.feature 'Categories', type: :feature do
   let(:user) { User.create(name: 'salma', email: 'salma@example.com', password: 'password') }
 
   before do
