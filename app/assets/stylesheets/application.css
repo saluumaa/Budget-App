@@ -72,11 +72,8 @@ hr {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 5%;
-  margin-bottom: 2%;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
-  font-size: 30px;
+  line-height: 15px;
+  font-size: 1.6rem;
 }
 
 .amount {

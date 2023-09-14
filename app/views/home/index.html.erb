@@ -1,21 +1,31 @@
 <br>
-<h1>Welcome to Budget App</h1>
-
-<div class="row">
-    <div class="col-md-8 mb-4">
-      <div class="card">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="card-title">Categories</h5>
-              <%= link_to 'Categories Page', categories_path, class: 'btn btn-primary' %>
-            </div>
-            <div class="col-md-6">
-              <h3 class="card-title"> Sign Out </h3>
-                <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: 'btn btn-primary' %>
+<div class="container">
+    <header>
+      <h1>Welcome to Budget App</h1>
+      <p>By Salma</p>
+    </header>
+    
+    <div class="row">
+      <div class="col-md-8 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <span> if you are a new user, please sign up</span>
+                <h3 class="card-title">Sign Up</h3>
+                <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary' %>
+              </div>
+              <div class="col-md-4">
+                <h3 class="card-title">Sign In</h3>
+                <%= link_to 'Sign In', new_user_session_path, class: 'btn btn-primary' %>
+              </div>
+               <div class="col-md-4">
+                <h3 class="card-title">Sign Out</h3>
+                <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link text-center" %>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-</div>
+  </div>
