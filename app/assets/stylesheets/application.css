@@ -59,6 +59,7 @@ body {
 
 .image-name-wrapper {
   gap: 2rem;
+  border-bottom: #434b54;
 }
 
 hr {
