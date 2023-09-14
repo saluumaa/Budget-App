@@ -1,0 +1,35 @@
+
+<br />
+
+<% if @categories.empty? %>
+  <p class="no-data">No categories found</p>
+  <%= link_to "Add New Category", new_category_path, class: "btn btn-primary no-data" %>
+<% else %>
+  <div class="groups-wrapper">
+    <% @categories.each do |category| %>
+      <%= link_to category_expenses_path(category.id), class: "group-card" do %>
+        <div class="group">
+        <div class="image-name-wrapper">   
+          <div class="group-icon">
+            <% if category.icon.present? %>
+              <%= image_tag category.icon %>
+            <% else %>
+              <%= image_tag "default.png" %>
+            <% end %>  
+          </div>
+          <div class="group-title">
+            <%= category.name %>
+            <hr>
+            <p class="month"><%= category.created_at.strftime('%d %b %Y') %></p>
+          </div>
+        </div>
+          <div class="amount-dollar bold">
+            <p> $ <%= category.total_amount %></p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+
+<%= link_to "Add New Category", new_category_path, class: "btn btn-primary" %>
+</div>
+<% end %>
