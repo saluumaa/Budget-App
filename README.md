@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Recipe App</h1>
+  <h1>Budget App</h1>
 </div>
 
 <a name="readme-top"></a>
@@ -9,9 +9,11 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Recipe-App-Rails ](#-blog-app-rails-)
+- [📖 Budget-App ](#-budget-app-rails-)
   - [🛠 Built With ](#-built-with-)
     - [Key Features ](#key-features-)
+  - [🛠Live Preview ](#-live-preview-)
+  - [🛠 Description ](#-video-description-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -26,25 +28,26 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Recipe App <a name="about-project"></a>
+# 📖 Budget App <a name="about-project"></a>
 
 > This is a budget app that helps to keep track the expenses of your transactions and it builds using ruby on rails language it shows you every purchases you made and the amount of money you spent on each transaction and it also shows you the total amount of money you spent on all transactions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-<h2> Tech Stack </h2>
+<h4> Tech Stack </h4>
 - Ruby on Rails
 - PSQL
 
-## 🛠 lIVE Preview <a name="live-preview"></a>
+## 🛠 live Preview <a name="live-preview"></a>
 <!-- project live preview -->
 
-
+https://budgetapp-d0on.onrender.com/
 
 ## 🛠 Description <a name="video-description"></a>
 
+https://www.loom.com/share/Partchart-App-Capstone-Project-Demo-211964510097459aa3de15a3f5934936?sid=9a18ca5b-a897-4564-bc39-31b72605fc64
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -151,7 +154,7 @@ If you like this project, give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
--  I am gratefull and would like to thankGregoire Vella for his amazing design and idea, you can find his design in this link [Gregoire Vella](https://www.behance.net/gregoirevella)
+-  I am gratefull and would like to thank [Gregoire Vella](https://www.behance.net/gregoirevella) for this amazing design idea, you can find the design in this link [Gregoire Vella](https://www.behance.net/gregoirevella)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
