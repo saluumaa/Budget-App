@@ -1,6 +1,5 @@
 class CategoriesController < ApplicationController
   before_action :authenticate_user!
-  # before_action :set_group
 
   def index
     @user = current_user
@@ -10,8 +9,6 @@ class CategoriesController < ApplicationController
   def show; end
 
   def new
-    # @category = Category.new
-
     if params[:category_id]
       @parent_category = Category.find(params[:category_id])
       @category = @parent_category.children.build
@@ -43,7 +40,6 @@ class CategoriesController < ApplicationController
   end
 
   private
-
 
   def category_params
     params.require(:category).permit(:name, :icon, :author_id)
