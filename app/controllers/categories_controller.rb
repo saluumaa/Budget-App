@@ -20,11 +20,11 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params.except(:icon))
     @category.author_id = current_user.id
-    icon_upload = params[:category][:icon]
-    if icon_upload.present?
-      file_path = Rails.root.join('app', 'assets', 'images', icon_upload.original_filename)
-      File.binwrite(file_path, icon_upload.read)
-      @category.icon = icon_upload.original_filename
+    uploaded_icon = params[:category][:icon]
+    if uploaded_icon.present?
+      file_path = Rails.root.join('app', 'assets', 'images', uploaded_icon.original_filename)
+      File.binwrite(file_path, uploaded_icon.read)
+      @category.icon = uploaded_icon.original_filename
     end
     if @category.save
       redirect_to categories_path
@@ -42,6 +42,6 @@ class CategoriesController < ApplicationController
   private
 
   def category_params
-    params.require(:category).permit(:name, :icon, :author_id)
+    params.require(:category).permit(:name, :icon)
   end
 end

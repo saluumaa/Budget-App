@@ -42,13 +42,13 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #5fb523;
+  background-color: #3778c2;
   color: white;
   text-align: center;
   padding: 1rem;
   border-radius: 100px 100px 0 0;
-  position: relative;
-  margin-top: 5%;
+  justify-content: center;
+ 
 }
 
 .btn-footer {
@@ -111,7 +111,8 @@ body {
 
 .group,
 .groups-wrapper,
-.image-name-wrapper {
+.image-name-wrapper,
+.footer {
   display: flex;
 }
 
