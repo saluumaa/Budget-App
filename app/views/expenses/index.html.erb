@@ -1,0 +1,28 @@
+<div class="container">
+<br />
+  <p class="border d-flex justify-content-between amount bold">Total Amount: <span>$<%= @total_amount %></span></p>
+
+  <% if @expenses.empty? %>
+    <p class="no-data">No expenses found</p>
+  <% else %>
+    <div class="row">
+      <div class="col-md-12">
+        <% @expenses.each do |expense| %>
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title"><%= expense.name %></h5>
+                <p class="card-text bold">$<%= expense.amount %></p>
+              </div>
+              <hr>
+              <span class="month"><%= expense.created_at.strftime('%d %b %Y') %></span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+  <footer class="footer">
+  <%= link_to 'Add a New Expense', new_category_expense_path(@category), class: "btn btn-block btn-footer" %>
+  </footer>
+</div>

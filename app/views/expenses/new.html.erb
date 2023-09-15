@@ -1,0 +1,32 @@
+<h1>Add a new transaction</h1>
+
+<%= form_with(model: [@category, @expense], url: category_expenses_path(@category), html: { class: "transaction-form" }) do |form| %>
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control", autofocus: true, required: true %>
+  </div>
+  <br />
+  <div class="form-group">
+    <%= form.label :amount %>
+    <%= form.number_field :amount, class: "form-control", required: true %>
+  </div>
+  <br />
+  <div class="form-group">
+  <label>Select Categories:</label>
+  <div class="checkbox-group">
+    <% @categories.each do |category| %>
+      <div class="form-check">
+        <%= form.check_box :category_ids, { multiple: true }, category.id, nil  %>
+        <%= form.label "expense[category_ids][]", category.name, class: "form-check-label" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+  <br />
+  <div class="d-flex image-name-wrapper">
+    <%= link_to 'Back', category_expenses_path, class: "btn btn-primary" %>
+    <div class="form-actions">
+      <%= form.submit "Save", class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,20 @@
+<div class="container">
+  <h1 class="mt-4">Add a new category</h1>
+
+  <%= form_with(model: @category, url: categories_path, method: :post, html: { class: 'mt-4' }) do |f| %>
+    <div class="mb-3">
+      <%= f.label :name, class: 'form-label' %>
+      <%= f.text_field :name, class: 'form-control', autofocus: true, required: true %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.label :icon, class: 'form-label' %>
+      <%= f.file_field :icon, class: 'form-control', data: { unsigned: 'your_upload_preset_name' } %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.submit "Save", class: 'btn btn-primary' %>
+      <%= link_to 'Back', categories_path, class: 'btn btn-secondary' %>
+    </div>
+  <% end %>
+</div>

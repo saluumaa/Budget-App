@@ -1,0 +1,194 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  background-color: #90fdba;
+  color: #434b54;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 1.2rem;
+  scroll-behavior: auto;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 1.5rem;
+  transition: all;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #90fdba;
+  color: rgb(42, 10, 253);
+  font-size: 2rem;
+  transform: scale(0.9);
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3778c2;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 100px 100px 0 0;
+  justify-content: center;
+}
+
+.btn-footer {
+  color: white;
+  font-size: 2rem;
+}
+
+.full-page-background {
+  background-color: #5fb523;
+  color: aliceblue;
+  height: 100vh;
+  width: auto;
+  gap: 3rem;
+  text-align: center;
+}
+
+.green {
+  background-color: #7537f9;
+  color: #a7ff5a;
+  font-weight: 700;
+}
+
+.splash-text {
+  font-size: 3rem;
+  word-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-family: 'pacifico', cursive;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.span {
+  font-weight: lighter;
+  color: #90fdba;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 12%;
+  padding-top: 15px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.month {
+  color: #434b5470;
+  font-size: 1rem;
+}
+
+.nav-container {
+  color: white;
+  background-color: #3778c2;
+}
+
+.nav-title {
+  color: white;
+  margin-left: 20%;
+}
+
+.group,
+.groups-wrapper,
+.image-name-wrapper,
+.footer {
+  display: flex;
+}
+
+.groups-wrapper {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.group {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-name-wrapper {
+  gap: 2rem;
+  border-bottom: #434b54;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #49698e55;
+  margin-bottom: 5px;
+}
+
+.no-data {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  line-height: 15px;
+  font-size: 1.6rem;
+}
+
+.amount {
+  padding: 12px;
+  background-color: rgb(249, 240, 230);
+  border-radius: 2%;
+  font-size: 20px;
+  box-shadow:
+    0 0 10px 0 rgba(0, 0, 0, 0.2),
+    0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.group-card {
+  text-decoration: none;
+  color: #434b54;
+}
+
+.group-icon img {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 60px;
+  height: 60px;
+  border-radius: 10%;
+  background-color: #3778c2;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+}
+
+.group-name {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 60px;
+  height: 60px;
+  background-color: #3778c2;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+}
+
+.group-name:hover,
+.group-icon:hover {
+  background-color: #4d8fe6;
+}
