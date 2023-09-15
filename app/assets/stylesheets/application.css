@@ -22,7 +22,21 @@ body {
 }
 
 .orange {
-  color: #ed9a3a;
+  background-color: #5fb523;
+  color: white;
+  margin-top: 20%;
+}
+
+.splash-text {
+  font-size: 1.9rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.span {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  display: block;
 }
 
 .bold {

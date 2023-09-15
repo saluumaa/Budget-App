@@ -15,7 +15,16 @@
   </head>
 
   <body>
+  <%if current_page?(root_path)%>
+    <div class="container orange text-center">
+      <h1 class="splash-text"> Budget App</h1>
+      <span class="splash-text span">Monitor your Expenses</span>
+      <a href="<%= new_user_registration_path %>" class="btn btn-primary btn-block ">Sign Up</a>
+      <a href="<%= new_user_session_path %>" class="btn btn-primary btn-block ">Sign In</a>
+    </div>
+    <%else%>
     <%= render "home/header" %>
+    <%end%>
   <div class="container">
     <%= yield %>
   </div>
