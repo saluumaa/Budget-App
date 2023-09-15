@@ -22,7 +22,7 @@ class CategoriesController < ApplicationController
     @category.author_id = current_user.id
     icon_upload = params[:category][:icon]
     if icon_upload.present?
-      file_path = Rails.root.join('public', 'uploads', icon_upload.original_filename)
+      file_path = Rails.root.join('app', 'assets', 'images', icon_upload.original_filename)
       File.binwrite(file_path, icon_upload.read)
       @category.icon = icon_upload.original_filename
     end
