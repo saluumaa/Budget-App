@@ -30,9 +30,10 @@ body {
   border: none;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: #90fdba;
-  color:rgb(42, 10, 253);
+  color: rgb(42, 10, 253);
   font-size: 2rem;
   transform: scale(0.9);
 }
@@ -55,11 +56,10 @@ body {
   font-size: 2rem;
 }
 
-
 .full-page-background {
   background-color: #5fb523;
   color: aliceblue;
-  height: 100vh; 
+  height: 100vh;
   width: auto;
   gap: 3rem;
   text-align: center;
@@ -86,7 +86,7 @@ body {
   font-size: 1rem;
   display: block;
   margin-bottom: 12%;
-  padding-top: 15px; 
+  padding-top: 15px;
 }
 
 .bold {
