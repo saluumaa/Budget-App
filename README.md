@@ -41,11 +41,11 @@
 ## 🛠 live Preview <a name="live-preview"></a>
 <!-- project live preview -->
 
-https://budgetapp-d0on.onrender.com/
+[Live Demo](https://budgetapp-d0on.onrender.com/)
 
 ## 🛠 Description <a name="video-description"></a>
 
-https://www.loom.com/share/Partchart-App-Capstone-Project-Demo-211964510097459aa3de15a3f5934936?sid=9a18ca5b-a897-4564-bc39-31b72605fc64
+[Video](https://www.loom.com/share/Partchart-App-Capstone-Project-Demo-211964510097459aa3de15a3f5934936?sid=9a18ca5b-a897-4564-bc39-31b72605fc64)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- Features -->
