@@ -15,28 +15,78 @@
  */
 
 body {
-  background-color: #90e7fd;
+  background-color: #90fdba;
   color: #434b54;
   font-family: 'Proxima Nova', sans-serif;
   font-size: 1.2rem;
+  scroll-behavior: auto;
 }
 
-.orange {
+.btn {
+  padding: 15px;
+  font-size: 1.5rem;
+  transition: all;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #90fdba;
+  color:rgb(42, 10, 253);
+  font-size: 2rem;
+  transform: scale(0.9);
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: #5fb523;
   color: white;
-  margin-top: 20%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 100px 100px 0 0;
+  position: relative;
+  margin-top: 5%;
+}
+
+.btn-footer {
+  color: white;
+  font-size: 2rem;
+}
+
+
+.full-page-background {
+  background-color: #5fb523;
+  color: aliceblue;
+  height: 100vh; 
+  width: auto;
+  gap: 3rem;
+  text-align: center;
+}
+
+.green {
+  background-color: #7537f9;
+  color: #a7ff5a;
+  font-weight: 700;
 }
 
 .splash-text {
-  font-size: 1.9rem;
+  font-size: 3rem;
+  word-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-family: 'pacifico', cursive;
   font-style: italic;
   font-weight: bold;
 }
 
 .span {
   font-weight: lighter;
-  font-size: 1.2rem;
+  color: #90fdba;
+  font-size: 1rem;
   display: block;
+  margin-bottom: 12%;
+  padding-top: 15px; 
 }
 
 .bold {

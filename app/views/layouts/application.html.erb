@@ -10,17 +10,22 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   </head>
 
   <body>
   <%if current_page?(root_path)%>
-    <div class="container orange text-center">
-      <h1 class="splash-text"> Budget App</h1>
-      <span class="splash-text span">Monitor your Expenses</span>
-      <a href="<%= new_user_registration_path %>" class="btn btn-primary btn-block ">Sign Up</a>
-      <a href="<%= new_user_session_path %>" class="btn btn-primary btn-block ">Sign In</a>
+   <div class="container orange d-flex flex-column justify-content-center full-page-background">
+      <h1 class="splash-text">Budget App
+      <span class="spalsh-text span">Monitor your expenses</span> </h1>
+      <a href="<%= new_user_registration_path %>" class="btn  btn-block green">Sign Up</a>
+      <a href="<%= new_user_session_path %>" class="btn  btn-block green">Sign In</a>
+      <% if user_signed_in? %>
+        <script>
+          window.location.href = "<%= categories_path %>";
+        </script>
+      <%end%>
     </div>
     <%else%>
     <%= render "home/header" %>
