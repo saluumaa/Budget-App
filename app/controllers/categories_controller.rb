@@ -18,18 +18,13 @@ class CategoriesController < ApplicationController
   end
 
   def create
-    @category = Category.new(category_params.except(:icon))
+    @category = Category.new(category_params)
     @category.author_id = current_user.id
-    uploaded_icon = params[:category][:icon]
-    if uploaded_icon.present?
-      file_path = Rails.root.join('app', 'assets', 'images', uploaded_icon.original_filename)
-      File.binwrite(file_path, uploaded_icon.read)
-      @category.icon = uploaded_icon.original_filename
-    end
     if @category.save
       redirect_to categories_path
     else
-      render :new
+      redirect_to new_category_path
+      flash[:alert] = group.errors.full_messages.join(', ')
     end
   end
 

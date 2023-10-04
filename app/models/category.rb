@@ -2,6 +2,7 @@ class Category < ApplicationRecord
   belongs_to :user, foreign_key: 'author_id'
   has_many :expenses_categories, class_name: 'ExpensesCategory', dependent: :destroy, foreign_key: 'category_id'
   has_many :expenses, through: :expenses_categories
+  has_one_attached :icon
 
   validates :name, presence: true
   validates :icon, presence: true
