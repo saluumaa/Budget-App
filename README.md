@@ -41,7 +41,7 @@
 ## 🛠 live Preview <a name="live-preview"></a>
 <!-- project live preview -->
 
-[Live Demo](https://budgetapp-d0on.onrender.com/)
+[Live Demo]([https://budgetapp-d0on.onrender.com/](https://budgetapp-d0on.onrender.com/)
 
 ## 🛠 Description <a name="video-description"></a>
 
